@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+      <div class="search-form-input">
+        <form class="search-form">
+          <input type="search" placeholder="Search images..." autofocus />
+          <button type="submit" class="button">Пошук</button>
+        </form>
+        <div class="loader" style="display: none"></div>
+      </div>
+      <div class="list-load-more">
+        <ul class="list" style="padding-left: 0"></ul>
 
-    <load src="./partials/footer.html" />
+        <button type="button" class="load-more">Load more</button>
+      </div>
+    </main>
 
     <script type="module" src="./main.js"></script>
   </body>
